@@ -220,12 +220,21 @@ Presents transaction activity across different hours and days, together with mer
 PaySim-Mobile-Money-Analytics/
 │
 ├── README.md
+├── .gitignore
 │
 ├── sql/
-│   └── SQL analysis scripts
+│   ├── 01_schema_setup.sql
+│   ├── 02_ledger_forensics.sql
+│   ├── 03_operational_views.sql
+│   ├── 04_fraud_heuristics.sql
+│   └── 05_tableau_exports.sql
 │
 ├── data/
-│   └── Exported analytical CSV files
+│   ├── confirmed_fraud_details.csv
+│   ├── customer_transfer_frequency.csv
+│   ├── hourly_network_summary.csv
+│   ├── merchant_daily_volume.csv
+│   └── rapid_cashout_anomalies.csv
 │
 └── assets/
     ├── tab1_macro_view.png
